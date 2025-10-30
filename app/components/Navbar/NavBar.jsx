@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import {React, useEffect, useState} from 'react';
 import {
   Navbar,
   NavbarBrand,
@@ -259,6 +259,19 @@ export default function NavBar() {
     'পরীক্ষা',
     'সাইন আপ',
   ];
+
+
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow(true); // 2 second por navbar show korbe
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!show) return null; // 2 second porjonto navbar hide
 
   return (
     <Navbar maxWidth="xl" className='py-2 bg-transparent fixed'  >

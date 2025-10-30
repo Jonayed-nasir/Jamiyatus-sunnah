@@ -4,7 +4,7 @@ export default function Hero() {
   return (
 
     // Hero Section
-    <div className="bg-[url(/images/hero.jpeg)]  bg-cover bg-center w-full sm:h-screen h-[70vh]">
+    <div className="bg-[url(/images/hero.jpeg)]   bg-cover bg-center w-full sm:h-screen h-[70vh]">
       <div className='flex flex-col sm:h-screen h-[70vh] items-center justify-center '>
 
         <div className='space-y-3 md:space-y-6 bg-amber-300/30 rounded-tl-2xl py-2 px-4 rounded-br-4xl rounded-md shadow'>
