@@ -1,11 +1,11 @@
-"use client"
+
 import React from 'react'
-import {Spinner} from "@heroui/react";
+import SpinNer from './components/Spinner'
 export default function loading() {
   return (
     <div className='flex items-center  justify-center w-full h-screen'>
-      <h2>Loading...</h2>
-      <Spinner classNames={{label: "text-foreground mt-4"}} label="dots" variant="dots" />
+      <h2 className='text-4xl'>Loading...</h2>
+      <SpinNer />
     </div>
   )
 }
