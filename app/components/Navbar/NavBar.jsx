@@ -264,7 +264,7 @@ export default function NavBar() {
     <Navbar maxWidth="xl" className='py-2 bg-transparent fixed'  >
       <NavbarBrand>
         {/* Logo */}
-        <Image src="/logo.jpeg" alt="logo" width="70px" />
+        <Image className='py-2 rounded-4xl' src="/logo.jpeg" alt="logo" width="70px" />
       </NavbarBrand>
       <NavbarContent className="hidden  sm:flex gap-6" justify="center">
         <NavbarItem>
@@ -348,8 +348,9 @@ export default function NavBar() {
           </DropdownMenu>
         </Dropdown>
       </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="sm:block hidden">
+
+      <NavbarContent  justify="end">
+        <NavbarItem className="sm:block hidden ">
           <Button
             as={Link}
             className="bg-linear-to-r/srgb from-indigo-500 to-teal-400 py-1.5 px-4 rounded-md text-black font-bold"
@@ -367,7 +368,7 @@ export default function NavBar() {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className='py-6'>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
